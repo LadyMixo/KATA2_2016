@@ -3,21 +3,22 @@ package kata.pkg2;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Histogram {
-    private final int[] data;
+// hacemos la clase histogram genérica <T>
+public class Histogram<T> {
+    private final T[] data;
 
     // comando para crear constructor= Alt+Insert
-    public Histogram(int[] data) {
+    public Histogram(T[] data) {
         this.data = data;
     }
 
-    public int[] getData() {
+    public T[] getData() {
         return data;
     }
     
     // importar librería= Alt+Enter
-    public Map<Integer, Integer> getHistogram (){
-        Map<Integer, Integer> histogram = new HashMap<>();
+    public Map<T, Integer> getHistogram (){
+        Map<T, Integer> histogram = new HashMap<>();
         
         // podemos recorrerlo con un bucle o con una operación ternaria.
         for (int i = 0; i < data.length; i++) {
