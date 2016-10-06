@@ -9,7 +9,7 @@ public class KATA2 {
         int[] data = {1,1,1,100,2,4,5,6,8,8,4,5,6,2,-4};
      Map<Integer, Integer>  histogram = new HashMap<>();   
      
-     // vamos recorriendo el vexctor de datos con un bucle
+     // vamos recorriendo el vector de datos con un bucle
      // vamos inicializando el mapa
         for (int i = 0; i < data.length; i++) { //fori+tab
             if (!histogram.containsKey(data[i])){
